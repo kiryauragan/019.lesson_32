@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <h1>Собери себе бургер</h1>
+    <form id="myForm">
+      <p>Выбери размер бургера:</p>
+      <input type="radio" name="size" id="small" value="small" />
+      <label for="smallSize">Маленький</label>
+      <input type="radio" name="size" id="big" value="big" />
+      <label for="bigSize">Большой</label>
+      <br />
+      <p>Укажи начинку бургера:</p>
+      <input type="checkbox" name="cheese" id="cheese" />
+      <label for="cheese">Сыр</label>
+      <input type="checkbox" name="salad" id="salad" />
+      <label for="salad">Салат</label>
+      <input type="checkbox" name="potato" id="potato" />
+      <label for="potato">Картошка</label>
+      <p>Дополнительно:</p>
+      <input type="checkbox" name="spices" id="spices" />
+      <label for="spices">Добавить специи</label>
+      <input type="checkbox" name="mayonnaise" id="mayonnaise" />
+      <label for="mayonnaise">Добавить майонез</label>
+    </form>
+    <br />
+    <b>Стоимость всего:</b> <span id="price">0</span> тугриків
+    <br />
+    <b>Калории:</b> <span id="calories">0</span> кКал
+    <br />
+    <button id="button">Заказать</button>
+    <button id="clear">Стереть</button>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
